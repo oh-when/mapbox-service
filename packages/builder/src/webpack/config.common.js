@@ -1,7 +1,7 @@
 const os = require("os");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const babelOption = require("../babel/config");
+const babelOption = require("../babel.config");
 
 module.exports = async function getCommonConfig(option) {
   return {
@@ -17,7 +17,7 @@ module.exports = async function getCommonConfig(option) {
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".json"],
       alias: {
-        "@": path.resolve(process.cwd(), "src"),
+        "~": path.join(process.cwd(), "src")
       },
     },
     target: ["web", "es5"],
@@ -54,7 +54,6 @@ module.exports = async function getCommonConfig(option) {
           {
             from: "src/types/**/*",
             to({ context, absoluteFilename }) {
-              console.log(context, absoluteFilename)
               return "./types/[name][ext]";
             },
             force: true,

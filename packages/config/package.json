@@ -1,0 +1,21 @@
+{
+	"private": false,
+	"name": "@dedong/mapbox-config",
+	"version": "0.1.0",
+	"description": "dedong mapbox builder",
+	"main": "src/index.ts",
+	"scripts": {
+		"test": "jest --coverage --config=./jest.config.js",
+		"clean": "rm -rf node_modules"
+	},
+	"author": {
+		"name": "jaewon21-kim",
+		"email": "jaewon21.kim@navercorp.com"
+	},
+	"dependencies": {
+		"tsyringe": "^4.6.0"
+	},
+	"devDependencies": {
+		"@dedong/mapbox-builder": "^0.1.0"
+	}
+}

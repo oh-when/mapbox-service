@@ -1,9 +1,13 @@
 module.exports = {
   preset: "ts-jest",
+  testEnvironment: 'node',
+  moduleNameMapper: {
+    '^~/(.*)$': `<rootDir>/src/$1`,
+  },
   collectCoverageFrom: [
     "<rootDir>/src/**/*.(t|j)s",
     "!<rootDir>/src/**/*.(test|spec).(t|j)s",
-    "!<rootDir>/src/**/typings/**",
+    "!<rootDir>/src/**/types/**",
     "!<rootDir>/node_modules/**",
   ],
   coverageDirectory: "coverage",
@@ -11,8 +15,4 @@ module.exports = {
   reporters: [
     "default",
   ],
-  globals: {
-    nhn: {},
-    naver: {},
-  },
 };

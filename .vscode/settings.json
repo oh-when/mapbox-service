@@ -1,0 +1,18 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.options": { "configFile": ".eslintrc.js" },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [
+    "./packages/builder",
+    "./packages/config",
+    "./packages/service"
+  ],
+  "typescript.validate.enable": true
+}

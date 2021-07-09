@@ -1,9 +1,9 @@
 {
 	"private": false,
-	"name": "@dedong/builder",
+	"name": "@dedong/mapbox-builder",
 	"version": "0.1.0",
 	"description": "dedong mapbox builder",
-	"main": "index.js",
+	"main": "src/index.js",
 	"scripts": {
 		"clean": "rm -rf node_modules"
 	},
@@ -15,6 +15,7 @@
 		"@babel/core": "^7.14.3",
 		"@babel/plugin-proposal-class-properties": "^7.13.0",
 		"@babel/plugin-transform-runtime": "^7.14.3",
+		"@babel/plugin-proposal-decorators": "^7.14.5",
 		"@babel/preset-env": "^7.14.2",
 		"@babel/preset-typescript": "^7.13.0",
 		"@babel/runtime-corejs3": "7.14.0",
@@ -27,5 +28,6 @@
 		"html-webpack-plugin": "^5.3.2",
 		"terser-webpack-plugin": "^5.1.2",
 		"thread-loader": "^3.0.4"
-	}
+	},
+	"devDependencies": {}
 }

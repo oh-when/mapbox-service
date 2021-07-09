@@ -1,14 +1,11 @@
-const path = require("path");
+const path = require('path');
 const TerserPlugin = require("terser-webpack-plugin");
 const ForkTsCheckerPlugin = require("fork-ts-checker-webpack-plugin");
-
-const ROOT_PATH = path.resolve(__dirname, "..", "..", "..");
-const TS_ESLINT_PATH = path.join(ROOT_PATH, ".eslintrc.js");
 
 module.exports = async function getProdConfig() {
   return {
     mode: "production",
-    devtool: "source-map",
+    devtool: "cheap-module-source-map",
     plugins: [
       new ForkTsCheckerPlugin({
         typescript: false,
@@ -16,7 +13,7 @@ module.exports = async function getProdConfig() {
           enabled: true,
           files: "./src/**/*.{ts,}",
           options: {
-            configFile: TS_ESLINT_PATH,
+            configFile: path.join(process.cwd(), '.eslintrc.js'),
             useEslintrc: false,
           },
         },
