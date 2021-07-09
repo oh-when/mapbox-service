@@ -8,7 +8,8 @@
 		"start": "npm run dev",
 		"clean": "rm -rf node_modules",
 		"dev": "webpack serve --env dev --open",
-		"build": "webpack"
+		"build": "webpack",
+		"test": "jest --coverage --config=./jest.config.js"
 	},
 	"author": {
 		"name": "load0ne",

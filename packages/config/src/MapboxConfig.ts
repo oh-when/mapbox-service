@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { injectable, singleton } from "tsyringe";
-import type { MapboxConfigOption } from "~/types/index.d";
+import type { MapboxConfigOption } from "./types/index.d";
 
 const defaultOption: Partial<MapboxConfigOption> = {
   theme: "light-v10",
