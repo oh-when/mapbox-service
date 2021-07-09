@@ -1,8 +1,10 @@
-import { inject } from "tsyringe";
+import { inject, injectable, singleton } from "tsyringe";
 import type { Ajax, DirectionType, Route } from "@dedong/mapbox-common";
 import type MapboxUrl from "@dedong/mapbox-url";
 
-export default class MapBoxDirection {
+@injectable()
+@singleton()
+export default class MapboxDirection {
   constructor(
     @inject("Ajax") private ajax: Ajax,
     @inject("MapboxUrl") private url: MapboxUrl,

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { injectable, singleton } from "tsyringe";
 import type { MapboxConfigOption } from "~/types/index.d";
 

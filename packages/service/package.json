@@ -19,6 +19,7 @@
 		"@dedong/mapbox-common": "^0.1.0",
 		"@dedong/mapbox-config": "^0.1.0",
 		"@dedong/mapbox-direction": "^0.1.0",
+		"@dedong/mapbox-static-image": "^0.1.0",
 		"@dedong/mapbox-url": "^0.1.0",
 		"tsyringe": "^4.6.0"
 	}
