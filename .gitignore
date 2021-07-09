@@ -63,3 +63,4 @@ jshint-output.html
 .DS_Store
 *.log
 @temp
+package-lock.json
