@@ -1,6 +1,6 @@
-# MapBoxService
+# MapboxService
 
-mapbox service api
+simple mapbox service api
 
 ## Getting Started
 
@@ -9,9 +9,9 @@ npm i -d @dedong/mapbox-service
 ```
 
 ```js
-import MapBoxService from "@dedong/mapbox-service";
+import MapboxService from "@dedong/mapbox-service";
 
-const mapboxService = new MapBoxService({
+const mapboxService = new MapboxService({
   accessToken: "...token"
 });
 ```
@@ -36,5 +36,5 @@ npm run test
 npm install
 npm run bootstrap
 # build
-npx lerna run build --scope=@dedong/mapbox-service
+npm run build
 ```

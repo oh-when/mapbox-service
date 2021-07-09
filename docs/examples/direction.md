@@ -1,7 +1,7 @@
 # Direction Example
 
 ```js
-import MapBoxService from "@dedong/mapbox-service";
+import MapboxService from "@dedong/mapbox-service";
 
 const spotCoords = [
   [127.029835, 37.503202],
@@ -9,7 +9,7 @@ const spotCoords = [
   [127.034931, 37.503215]
 ];
 
-const mapboxService = new MapBoxService({
+const mapboxService = new MapboxService({
   accessToken: "...token"
 });
 

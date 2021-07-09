@@ -1,7 +1,7 @@
 # Static Image Example
 
 ```js
-import MapBoxService from "@dedong/mapbox-service";
+import MapboxService from "@dedong/mapbox-service";
 
 const img = document.getElementById("img");
 const spotCoords = [
@@ -10,7 +10,7 @@ const spotCoords = [
   [127.034931, 37.503215]
 ];
 
-const mapboxService = new MapBoxService({
+const mapboxService = new MapboxService({
   accessToken: "...token"
 });
 
