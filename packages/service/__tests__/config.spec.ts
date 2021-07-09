@@ -1,16 +1,9 @@
-import "reflect-metadata";
-import { MapboxConfigOption } from "@dedong/mapbox-config";
 import MapboxService from "../src/MapboxService";
+import option from "./.helptest.option";
 
 describe('mapbox-config specification', () => {
-  let option: MapboxConfigOption = null;
   let service: MapboxService = null;
-
   beforeEach(() => {
-    option = {
-      accessToken: 'my-token',
-      theme: 'light-v10'
-    }
     service = new MapboxService(option);
   });
 

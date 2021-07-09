@@ -61,7 +61,11 @@ export default class MapboxUrl {
       coord: [number, number];
       imageUrl: string;
     }>;
-    line: Array<[number, number]>;
+    line: {
+      coords: Array<[number, number]>,
+      color: string;
+      width: number;
+    };
   }): Record<string, any> {
     const geojson = {
       type: "FeatureCollection",
@@ -87,11 +91,11 @@ export default class MapboxUrl {
       type: "Feature",
       geometry: {
         type: "LineString",
-        coordinates: line,
+        coordinates: line.coords,
       },
       properties: {
-        stroke: "#f0f0f0",
-        "stroke-width": 2,
+        stroke: line.color,
+        "stroke-width": line.width,
       },
     });
 

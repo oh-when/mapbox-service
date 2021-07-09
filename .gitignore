@@ -11,6 +11,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
+.helptest.*
 
 # Eclipse Core
 .project
