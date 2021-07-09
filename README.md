@@ -8,13 +8,16 @@ mapbox service api
 npm i -d @dedong/mapbox-service
 ```
 
-```ts
+```js
 import MapBoxService from "@dedong/mapbox-service";
 
 const mapboxService = new MapBoxService({
   accessToken: "...token"
 });
 ```
+
+- [direction example](./docs/examples/direction.md)
+- [static image example](./docs/examples/static-image.md)
 
 ## Test
 

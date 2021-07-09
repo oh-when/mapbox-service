@@ -20,8 +20,16 @@ module.exports = {
     privateFieldsAsProperties: true
   },
   plugins: [
-    ["@babel/plugin-proposal-decorators", { legacy: true }],
-    ["@babel/plugin-proposal-class-properties"],
-    ["@babel/transform-runtime", { corejs: 3 }],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "absoluteRuntime": false,
+        "corejs": false,
+        "helpers": true,
+        "regenerator": true
+      }
+    ],
+    ["babel-plugin-transform-typescript-metadata"],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
   ],
 };
