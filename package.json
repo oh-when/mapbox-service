@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://oss.navwercorp.com/sau/image_tab"
+    "url": "https://github.com/oh-when/mapbox-service"
   },
   "license": "MIT",
   "devDependencies": {

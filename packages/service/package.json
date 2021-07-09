@@ -1,9 +1,10 @@
 {
 	"private": false,
 	"name": "mapbox-service",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "mapbox service module",
 	"main": "dist/js/MapboxService.js",
+	"types": "dist/types/index.d.ts",
 	"scripts": {
 		"start": "npm run dev",
 		"clean": "rm -rf node_modules",
@@ -16,12 +17,14 @@
 		"email": "load0ne@gmail.com"
 	},
 	"dependencies": {
+		"tsyringe": "^4.6.0"
+	},
+	"devDependencies": {
 		"@dedong/mapbox-builder": "0.1.0",
 		"@dedong/mapbox-common": "^0.1.0",
 		"@dedong/mapbox-config": "^0.1.0",
 		"@dedong/mapbox-direction": "^0.1.0",
 		"@dedong/mapbox-static-image": "^0.1.0",
-		"@dedong/mapbox-url": "^0.1.0",
-		"tsyringe": "^4.6.0"
+		"@dedong/mapbox-url": "^0.1.0"
 	}
 }
