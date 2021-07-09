@@ -16,14 +16,14 @@ const mapboxService = new MapBoxService({
 });
 ```
 
-## Dev
+## Test
 
 ```sh
 # install dependencies
 npm install
 npm run bootstrap
-# run dev server
-npx lerna run dev --scope=@dedong/mapbox-service
+# run test
+npm run test
 ```
 
 ## Build

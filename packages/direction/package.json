@@ -1,8 +1,8 @@
 {
 	"private": false,
-	"name": "@dedong/mapbox-common",
+	"name": "@dedong/mapbox-direction",
 	"version": "0.1.0",
-	"description": "dedong mapbox common",
+	"description": "dedong mapbox builder",
 	"main": "src/index.ts",
 	"scripts": {
 		"clean": "rm -rf node_modules"
@@ -15,6 +15,9 @@
 		"tsyringe": "^4.6.0"
 	},
 	"devDependencies": {
-		"@dedong/mapbox-builder": "^0.1.0"
+		"@dedong/mapbox-builder": "^0.1.0",
+		"@dedong/mapbox-common": "^0.1.0",
+		"@dedong/mapbox-config": "^0.1.0",
+		"@dedong/mapbox-url": "^0.1.0"
 	}
 }
