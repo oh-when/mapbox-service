@@ -1,7 +1,7 @@
 {
 	"private": false,
 	"name": "mapbox-service",
-	"version": "0.0.6",
+	"version": "0.0.12",
 	"description": "mapbox service module",
 	"main": "dist/js/MapboxService.js",
 	"types": "dist/types/index.d.ts",
@@ -12,10 +12,15 @@
 		"build": "webpack",
 		"test": "jest --coverage --config=./jest.config.js"
 	},
+	"license": "MIT",
 	"author": {
 		"name": "load0ne",
 		"email": "load0ne@gmail.com"
 	},
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/oh-when/mapbox-service/tree/master/packages/service"
+  },
 	"dependencies": {
 		"reflect-metadata": "^0.1.13",
 		"tsyringe": "^4.6.0"
