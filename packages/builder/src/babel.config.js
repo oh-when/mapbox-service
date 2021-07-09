@@ -20,8 +20,8 @@ module.exports = {
     privateFieldsAsProperties: true
   },
   plugins: [
-    ["@babel/plugin-proposal-decorators", { decoratorsBeforeExport: true }],
-    ["@babel/proposal-class-properties"],
+    ["@babel/plugin-proposal-decorators", { legacy: true }],
+    ["@babel/plugin-proposal-class-properties"],
     ["@babel/transform-runtime", { corejs: 3 }],
   ],
 };

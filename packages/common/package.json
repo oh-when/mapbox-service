@@ -1,0 +1,17 @@
+{
+	"private": false,
+	"name": "@dedong/mapbox-common",
+	"version": "0.1.0",
+	"description": "dedong mapbox common",
+	"main": "src/index.ts",
+	"scripts": {
+		"clean": "rm -rf node_modules"
+	},
+	"author": {
+		"name": "jaewon21-kim",
+		"email": "jaewon21.kim@navercorp.com"
+	},
+	"dependencies": {
+		"tsyringe": "^4.6.0"
+	}
+}

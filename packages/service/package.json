@@ -3,14 +3,12 @@
 	"name": "@dedong/mapbox-service",
 	"version": "0.0.1",
 	"description": "mapbox service module",
-	"main": "dist/js/index.js",
-	"types": "dist/types/index.d.ts",
+	"main": "dist/js/MapboxService.js",
 	"scripts": {
 		"start": "npm run dev",
 		"clean": "rm -rf node_modules",
 		"dev": "webpack serve --env dev --open",
-		"build": "webpack",
-		"test": "jest --coverage --config=./jest.config.js"
+		"build": "webpack"
 	},
 	"author": {
 		"name": "load0ne",
@@ -18,6 +16,8 @@
 	},
 	"dependencies": {
 		"@dedong/mapbox-builder": "0.1.0",
-		"@dedong/mapbox-config": "^0.1.0"
+		"@dedong/mapbox-config": "^0.1.0",
+		"@dedong/mapbox-url": "^0.1.0",
+		"tsyringe": "^4.6.0"
 	}
 }

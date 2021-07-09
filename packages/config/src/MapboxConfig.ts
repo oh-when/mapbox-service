@@ -1,4 +1,4 @@
-import { injectable } from "tsyringe";
+import { injectable, singleton } from "tsyringe";
 import type { MapboxConfigOption } from "~/types/index.d";
 
 const defaultOption: Partial<MapboxConfigOption> = {
@@ -6,6 +6,7 @@ const defaultOption: Partial<MapboxConfigOption> = {
 }
 
 @injectable()
+@singleton()
 export default class MapboxConfig {
   private opt: MapboxConfigOption;
 

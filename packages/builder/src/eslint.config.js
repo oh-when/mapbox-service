@@ -20,6 +20,8 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   rules: {
     "quotes": ["error", "double"],
+    "@typescript-eslint/no-unsafe-assignment": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/camelcase": "off",
     camelcase: "off",
     "@typescript-eslint/naming-convention": [
@@ -40,7 +42,7 @@ module.exports = {
       {
         selector: "memberLike",
         modifiers: ["private"],
-        format: ["camelCase"],
+        format: ["camelCase", "UPPER_CASE"],
       },
       {
         selector: "typeLike",
