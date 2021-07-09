@@ -1,0 +1,6 @@
+{
+  "extends": "./packages/builder/typescript/tsconfig.json",
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+	"private": false,
+	"name": "@dedong/builder",
+	"version": "0.1.0",
+	"description": "dedong mapbox builder",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rm -rf node_modules"
+	},
+	"author": {
+		"name": "jaewon21-kim",
+		"email": "jaewon21.kim@navercorp.com"
+	},
+	"dependencies": {
+		"@babel/core": "^7.14.3",
+		"@babel/plugin-proposal-class-properties": "^7.13.0",
+		"@babel/plugin-transform-runtime": "^7.14.3",
+		"@babel/preset-env": "^7.14.2",
+		"@babel/preset-typescript": "^7.13.0",
+		"@babel/runtime-corejs3": "7.14.0",
+		"babel-loader": "^8.2.2",
+		"copy-webpack-plugin": "^9.0.1",
+		"eslint-webpack-plugin": "^2.5.4",
+		"express": "^4.17.1",
+		"fork-ts-checker-webpack-plugin": "^6.2.10",
+		"html-loader": "^2.1.2",
+		"html-webpack-plugin": "^5.3.2",
+		"terser-webpack-plugin": "^5.1.2",
+		"thread-loader": "^3.0.4"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"private": false,
+	"name": "@dedong/mapbox-service",
+	"version": "0.0.1",
+	"description": "mapbox service module",
+	"main": "dist/index.js",
+	"types": "dist/types/index.d.ts",
+	"scripts": {
+		"start": "npm run dev",
+		"clean": "rm -rf node_modules",
+		"dev": "webpack serve --env dev --open",
+		"build": "webpack",
+		"test": "jest --watchAll --coverage"
+	},
+	"author": {
+		"name": "load0ne",
+		"email": "load0ne@gmail.com"
+	},
+	"dependencies": {
+		"@dedong/builder": "0.1.0"
+	}
+}

@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "name": "mapbox-service-project",
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist --nohoist=eslint-config-prettier",
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "clean:all": "npm run clean && lerna clean -y && rm -rf node_modules",
+    "outdated": "lerna exec npm outdated",
+    "postinstall": "npm run bootstrap && npm run prepare",
+    "prepare": "husky install",
+    "start": "lerna run start",
+    "test": "lerna run test"
+  },
+  "author": {
+    "name": "load0ne",
+    "email": "jjazan@gmail.com"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://oss.navwercorp.com/sau/image_tab"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.27.0",
+    "eslint-config-naver": "^2.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-loader": "^4.0.2",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "lerna": "^4.0.0",
+    "license-checker": "^25.0.1",
+    "lint-staged": "^11.0.0",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {}
+}

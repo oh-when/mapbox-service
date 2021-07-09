@@ -1,0 +1,6 @@
+**/build/
+**/dist/
+**/webpack.config.js
+window.d.ts
+*.js
+**/*.spec.ts

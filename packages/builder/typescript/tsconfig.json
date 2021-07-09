@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "importsNotUsedAsValues": "preserve",
+    "sourceMap": true,
+    "allowJs": true,
+    "module": "commonjs",
+    "target": "es5",
+    "skipLibCheck": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+        "@/*": ["src/*"],
+    },
+    "lib": [
+      "es2015",
+      "dom",
+      "es2017"
+    ]
+  }
+}
