@@ -16,13 +16,13 @@ export default class MapboxService {
       .register<MapboxConfig>("MapboxConfig", {
         useValue: new MapboxConfig(configOption)
       })
-      .register("MapboxUrl", {
+      .register<MapboxUrl>("MapboxUrl", {
         useClass: MapboxUrl
       })
-      .register("MapboxDirection", {
+      .register<MapboxDirection>("MapboxDirection", {
         useClass: MapboxDirection
       })
-      .register("MapboxStaticImage", {
+      .register<MapboxStaticImage>("MapboxStaticImage", {
         useClass: MapboxStaticImage
       });
   }

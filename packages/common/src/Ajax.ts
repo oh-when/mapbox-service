@@ -1,4 +1,4 @@
-import { singleton } from "tsyringe";
+import { injectable, singleton } from "tsyringe";
 
 export type AjaxRequestInput<
   URLParam extends Record<string, any> = Record<string, any>,
@@ -10,6 +10,7 @@ export type AjaxRequestInput<
   data?: BodyData;
 };
 
+@injectable()
 @singleton()
 export class Ajax {
   public async requestGET<
