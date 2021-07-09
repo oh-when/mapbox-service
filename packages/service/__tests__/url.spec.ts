@@ -1,7 +1,7 @@
 import MapboxService from "../src/MapboxService";
 import option from "./.helptest.option";
 
-describe('mapbox-service specification', () => {
+describe('mapbox-url specification', () => {
   let service: MapboxService = null;
   let spots: Array<{ coord: [number, number]; imageUrl: string; }>
   let line: { coords: Array<[number, number]>; color: string; width: number; }

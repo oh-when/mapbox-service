@@ -17,19 +17,21 @@ export default class MapboxStaticImage {
     spotImageUrls,
     width,
     height,
+    line
   }: {
     spotCoords: Array<[number, number]>;
     spotImageUrls: string[];
     width: number;
     height: number;
+    line: { color: string; width: number; };
   }): Promise<string> {
-    const line = await this.direction.getDirections({ type: "cycling", spotCoords });
+    const lineCoords = await this.direction.getDirections({ type: "cycling", spotCoords });
     const geojson = this.url.getGeoJson({
       spots: spotCoords.map((coord, i) => ({
         coord,
         imageUrl: spotImageUrls[i],
       })),
-      line,
+      line: { coords: lineCoords, ...line },
     });
     const staticImageUrl = this.url.getStaticImageUrl({
       geojson,
