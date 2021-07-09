@@ -3,7 +3,7 @@
   "name": "mapbox-service-project",
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist --nohoist=eslint-config-prettier",
-    "build": "lerna run build --scope=@dedong/mapbox-service --stream",
+    "build": "lerna run build --scope=mapbox-service --stream",
     "clean": "lerna run clean",
     "clean:all": "npm run clean && lerna clean -y && rm -rf node_modules",
     "outdated": "lerna exec npm outdated",

@@ -1,6 +1,6 @@
 {
 	"private": false,
-	"name": "@dedong/mapbox-service",
+	"name": "mapbox-service",
 	"version": "0.0.1",
 	"description": "mapbox service module",
 	"main": "dist/js/MapboxService.js",
