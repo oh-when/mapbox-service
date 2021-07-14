@@ -13,6 +13,7 @@ module.exports = async function getCommonConfig(option) {
       library: "[name]",
       libraryTarget: "umd",
       libraryExport: "default",
+      globalObject: "this"
     },
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".json"],

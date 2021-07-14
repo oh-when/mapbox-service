@@ -1,7 +1,7 @@
 {
 	"private": false,
 	"name": "mapbox-service",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"description": "mapbox service module",
 	"main": "dist/js/MapboxService.js",
 	"types": "dist/types/index.d.ts",
