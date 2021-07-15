@@ -1,10 +1,9 @@
 {
 	"private": false,
 	"name": "mapbox-service",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"description": "mapbox service module",
 	"main": "dist/js/MapboxService.js",
-	"types": "dist/types/index.d.ts",
 	"scripts": {
 		"start": "npm run dev",
 		"clean": "rm -rf node_modules",
